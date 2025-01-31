@@ -14,6 +14,13 @@ export default function Contact() {
 		e.preventDefault();
 		// Implement email sending logic here
 		console.log("Form submitted:", formData);
+		setFormData({
+			name: "",
+			email: "",
+			phone: "",
+			eventType: "",
+			message: "",
+		});
 	};
 
 	return (
@@ -31,13 +38,12 @@ export default function Contact() {
 				<form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
 					<div className="grid md:grid-cols-2 gap-6">
 						<div>
-							<label className="block  mb-2">
-								Nome
-							</label>
+							<label className="block  mb-2">Nome</label>
 							<input
 								type="text"
 								required
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424]"
+								value={formData.name}
 								onChange={(e) =>
 									setFormData({
 										...formData,
@@ -47,13 +53,12 @@ export default function Contact() {
 							/>
 						</div>
 						<div>
-							<label className="block  mb-2">
-								Email
-							</label>
+							<label className="block  mb-2">Email</label>
 							<input
 								type="email"
 								required
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424]"
+								value={formData.email}
 								onChange={(e) =>
 									setFormData({
 										...formData,
@@ -63,13 +68,12 @@ export default function Contact() {
 							/>
 						</div>
 						<div>
-							<label className="block  mb-2">
-								Telefone
-							</label>
+							<label className="block  mb-2">Telefone</label>
 							<input
 								type="tel"
 								required
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424]"
+								value={formData.phone}
 								onChange={(e) =>
 									setFormData({
 										...formData,
@@ -85,6 +89,7 @@ export default function Contact() {
 							<select
 								required
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424]"
+								value={formData.eventType}
 								onChange={(e) =>
 									setFormData({
 										...formData,
@@ -100,13 +105,12 @@ export default function Contact() {
 							</select>
 						</div>
 						<div className="md:col-span-2">
-							<label className="block  mb-2">
-								Mensagem
-							</label>
+							<label className="block  mb-2">Mensagem</label>
 							<textarea
 								required
 								rows="4"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424]"
+								value={formData.message}
 								onChange={(e) =>
 									setFormData({
 										...formData,
@@ -118,7 +122,7 @@ export default function Contact() {
 					</div>
 					<button
 						type="submit"
-						className="mt-6 w-full bg-pink-500 text-white py-3 rounded-lg hover:bg-pink-600 transition-colors"
+						className="mt-6 w-full bg-[#802424] text-white py-3 rounded-lg hover:bg-[#E6B0AA] transition-colors btn"
 					>
 						Enviar Pedido
 					</button>

@@ -10,20 +10,20 @@ export default function Hero() {
 			id="home"
 		>
 			<div className="container mx-auto px-4 text-center ">
-				<h1 className="text-4xl md:text-6xl font-bold font-saturnus mb-6">
+				<h1 className="text-4xl md:text-6xl font-bold font-saturnus mb-8">
 					Transformamos Momentos em Doces Memórias
 				</h1>
-				<h2 className="text-xl md:text-2xl  mb-8">
+				<p className="text-base text-justify md:text-2xl  mb-12">
 					{/* Bolos artesanais que encantam olhos e paladares */}
                     Bem vindo à Saborear Doceria Salvador, onde transformamos
 					sonhos em realidade com bolos e doces únicos que encantam todos os sentidos.
 					Somos especialistas em confeitaria criativa, inclusive bolos com efeitos especiais.
                     Nossa equipe combina técnica impecável e inovação para criar pelas que são verdadeiras obras de arte comestiveis.
-				</h2>
+				</p>
 				
 				<a
 					href="#contato"
-					className="bg-pink-500 text-white px-8 py-4 rounded-full text-lg hover:bg-pink-600 transition-colors "
+					className="bg-[#802424] text-white px-8 py-4 rounded-full text-lg hover:bg-[#E6B0AA] transition-colors btn"
 				>
 					Faça seu Pedido
 				</a>

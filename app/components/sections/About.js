@@ -19,7 +19,7 @@ export default function About() {
 				</h2>
 				<div className="grid md:grid-cols-2 gap-16 ml-20 items-center">
 					<div>
-						<p className="text-base text-justify text-gray-600 leading-relaxed">
+						<p className="text-base text-justify  leading-relaxed">
 							Era uma vez uma engenheira com um sonho no coração:
 							levar ao mundo a arte de saborear a vida. Sua
 							jornada começou no universo exato da engenharia,
@@ -29,7 +29,7 @@ export default function About() {
 							criativa, um mundo onde a precisão da engenharia se
 							encontrava com a doçura da vida.
 						</p>
-						<p className="text-base text-justify text-gray-600 leading-relaxed mt-4">
+						<p className="text-base text-justify  leading-relaxed mt-4">
 							Assim nasceu nossa empresa, um lugar onde bolos não
 							são apenas sobremesas, mas verdadeiras obras de arte
 							com efeitos especiais, encantando e maravilhando.
@@ -39,7 +39,7 @@ export default function About() {
 							a magia da confeitaria, criando experiências que
 							tocam o coração.
 						</p>
-						<p className="text-base text-justify text-gray-600 leading-relaxed mt-4">
+						<p className="text-base text-justify  leading-relaxed mt-4">
 							Nossa missão vai além de criar doces. Queremos
 							despertar nas pessoas a consciência de que a vida é
 							uma jornada de sabores, onde cada momento, por mais

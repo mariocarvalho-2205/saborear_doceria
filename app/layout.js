@@ -5,6 +5,7 @@ import './globals.css'
 export const metadata = {
   title: 'Saborear Doceria - Bolos Artesanais para Momentos Especiais',
   description: 'Especialistas em bolos confeitados para aniversários, casamentos e formaturas. Transformamos seus momentos especiais em doces memórias inesquecíveis.',
+  metadataBase: new URL('http://saboreardoceria.com'), 
   icons: {
     icon: "/favicon.png", // ou "/favicon.png" se for PNG
   },

@@ -25,7 +25,7 @@ export default function Navbar() {
 						height={20}
 						className="mr-4"
 					/>
-					<h1 ><a href="#home">Saborear Doceria</a></h1>
+					<h1 className="text-2xl"><a href="#home" className="hover:text-[#E6B0AA]">Saborear Doceria</a></h1>
 				</div>
 				<div className="hidden md:flex space-x-6">
 					<a
