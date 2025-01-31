@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Configurações globais */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-[#802424];
+}
+
+/* Personalizações do Carousel */
+.carousel .slide img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.carousel .control-arrow {
+  @apply bg-black/20 hover:bg-black/40 transition-colors;
+}
+
+.carousel .control-dots .dot {
+  @apply bg-pink-500;
+}
+
+/* Animações de transição */
+.section-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Estilos para imagens com hover */
+.image-hover {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+/* Estilos para formulários */
+input, textarea, select {
+  @apply outline-none transition-all duration-200;
+}
+
+input:focus, textarea:focus, select:focus {
+  @apply ring-2 ring-pink-500 border-transparent;
+}
+
+/* Estilos para botões */
+.btn {
+  @apply px-6 py-2 rounded-full transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-pink-500 text-white hover:bg-pink-600;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+/* Personalização da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-pink-300 rounded-full hover:bg-pink-400;
+}
+
+/* Estilos para textos */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+/* Classes de utilidade personalizadas */
+.container {
+  @apply px-4 mx-auto max-w-7xl;
+}
+
+/* Estilos para links */
+a {
+  @apply transition-colors duration-200;
+}
+
+/* Classes para espaçamento de seção */
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+/* Classes para fade in de elementos */
+.fade-in {
+  @apply animate-fade-in;
+}
+
+/* Classes para slide up de elementos */
+.slide-up {
+  @apply animate-slide-up;
+}
