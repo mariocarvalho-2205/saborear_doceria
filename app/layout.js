@@ -5,6 +5,9 @@ import './globals.css'
 export const metadata = {
   title: 'Saborear Doceria - Bolos Artesanais para Momentos Especiais',
   description: 'Especialistas em bolos confeitados para aniversários, casamentos e formaturas. Transformamos seus momentos especiais em doces memórias inesquecíveis.',
+  icons: {
+    icon: "/favicon.png", // ou "/favicon.png" se for PNG
+  },
   keywords: 'bolos confeitados, bolos de casamento, bolos de aniversário, bolos de formatura, confeitaria artesanal, doceria, bolos personalizados',
   openGraph: {
     title: 'Saborear Doceria - Bolos Artesanais para Momentos Especiais',
