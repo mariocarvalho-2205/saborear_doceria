@@ -22,6 +22,7 @@ export default function Contact() {
 			  process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
 			  formData
 			);
+			alert("Mensagem enviada com sucesso!")
 			setFormData({name: "", email: "", phone: "", eventType: "", message: ""});
 		  } catch (error) {
 			console.error(error);
