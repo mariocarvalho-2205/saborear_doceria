@@ -20,14 +20,14 @@ export default function Gallery() {
 					{[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
 						<motion.div
 							key={index}
-							whileHover={{ scale: 1.05 }}
+							whileHover={{ scale: 1.02 }}
 							className="relative aspect-square overflow-hidden rounded-lg"
 						>
 							<Image
 								src={`/gallery/gallery-${index}.jpg`}
 								alt={`Evento ${index}`}
-								layout="fill"
-								objectFit="cover"
+								width={300}
+								height={200}
 								className="transform transition-transform hover:scale-110"
 							/>
 						</motion.div>

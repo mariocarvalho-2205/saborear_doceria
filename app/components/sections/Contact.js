@@ -1,5 +1,9 @@
+// Contact.js
 import { motion } from "framer-motion";
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
+
+emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
 
 export default function Contact() {
 	const [formData, setFormData] = useState({
@@ -12,15 +16,16 @@ export default function Contact() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		// Implement email sending logic here
-		console.log("Form submitted:", formData);
-		setFormData({
-			name: "",
-			email: "",
-			phone: "",
-			eventType: "",
-			message: "",
-		});
+		try {
+			await emailjs.send(
+			  process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+			  process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+			  formData
+			);
+			setFormData({name: "", email: "", phone: "", eventType: "", message: ""});
+		  } catch (error) {
+			console.error(error);
+		  }
 	};
 
 	return (

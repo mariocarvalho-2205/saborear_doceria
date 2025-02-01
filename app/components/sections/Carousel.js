@@ -24,15 +24,15 @@ export default function MyCarousel() {
 					infiniteLoop={true}
 					autoPlay={true}
 					interval={3000}
-					className="max-w-4xl mx-auto"
+					className="max-w-xl mx-auto"
 				>
 					{[1, 2, 3, 4, 5].map((index) => (
 						<div key={index} className="relative aspect-video">
 							<Image
 								src={`/gallery/carousel-${index}.jpg`}
 								alt={`Evento Carrossel ${index}`}
-								layout="fill"
-								objectFit="cover"
+								width={1080}
+								height={768}
 								className="rounded-lg"
 							/>
 						</div>
