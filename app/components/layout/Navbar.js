@@ -15,7 +15,7 @@ export default function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
-		<nav className="fixed w-full bg-[#FADBD8] backdrop-blur-sm z-50 shadow-md text-[#802424] font-bold font-saturnus">
+		<nav className="fixed w-screen bg-[#FADBD8] backdrop-blur-sm z-50 shadow-md text-[#802424] font-bold font-saturnus px-6">
 			<div className="container mx-auto px-4 py-5 flex justify-between items-center text-xl">
 				<div className={`${styles.navbar_container} `}>
 					<Image
@@ -82,29 +82,29 @@ export default function Navbar() {
 
 			{/* Menu mobile */}
 			{isMenuOpen && (
-				<div className="md:hidden bg-white border-t">
+				<div className="md:hidden bg-[#FADBD8]">
 					<div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
 						<a
 							href="#sobre"
-							className="text-gray-600 hover:text-pink-500"
+							className="text-[#802424] hover:text-[#E6B0AA]"
 						>
 							Sobre
 						</a>
 						<a
 							href="#galeria"
-							className="text-gray-600 hover:text-pink-500"
+							className="text-[#802424] hover:text-[#E6B0AA]"
 						>
 							Galeria
 						</a>
 						<a
 							href="#eventos"
-							className="text-gray-600 hover:text-pink-500"
+							className="text-[#802424] hover:text-[#E6B0AA]"
 						>
 							Eventos
 						</a>
 						<a
 							href="#contato"
-							className="text-gray-600 hover:text-pink-500"
+							className="text-[#802424] hover:text-[#E6B0AA]"
 						>
 							Contato
 						</a>

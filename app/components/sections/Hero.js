@@ -6,7 +6,7 @@ export default function Hero() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 1 }}
-			className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#f9edec] to-[#fbf8f7] pt-16"
+			className="scroll-mt-4 min-h-screen flex items-center justify-center bg-gradient-to-r from-[#f9edec] to-[#fbf8f7] pt-16 px-6"
 			id="home"
 		>
 			<div className="container mx-auto px-4 text-center ">

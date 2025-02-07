@@ -11,7 +11,7 @@ export default function MyCarousel() {
 			initial={{ opacity: 0, y: 50 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.8 }}
-			className="py-28 bg-white"
+			className="py-28 bg-white scroll-mt-4 px-6"
 		>
 			<div className="container mx-auto px-4">
 				<h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-saturnus">
@@ -26,13 +26,13 @@ export default function MyCarousel() {
 					interval={3000}
 					className="max-w-xl mx-auto"
 				>
-					{[1, 2, 3, 4, 5].map((index) => (
+					{[1, 2, 3, 4].map((index) => (
 						<div key={index} className="relative aspect-video">
 							<Image
 								src={`/gallery/carousel-${index}.jpg`}
 								alt={`Evento Carrossel ${index}`}
-								width={1080}
-								height={768}
+								width={1680}
+								height={1050}
 								className="rounded-lg"
 							/>
 						</div>
