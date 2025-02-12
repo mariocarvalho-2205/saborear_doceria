@@ -78,7 +78,7 @@ export default function Testimonials() {
                 onClick={() => setSelectedImage(null)}
               >
                 <motion.div 
-                  className="relative w-[400px] h-[800px] max-w-full max-h-screen flex items-center justify-center"
+                  className="relative w-[300px] h-[660px] max-w-full max-h-screen flex items-center justify-center"
                   initial={{ scale: 0.8 }}
                   animate={{ scale: 1 }}
                   exit={{ scale: 0.8 }}
