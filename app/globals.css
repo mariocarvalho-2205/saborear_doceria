@@ -20,7 +20,7 @@ body {
 }
 
 .carousel .control-arrow {
-  @apply bg-black/20 hover:bg-black/40 transition-colors;
+  @apply bg-[#802424]/20 hover:bg-[#802424]/40 transition-colors;
 }
 
 .carousel .control-dots .dot {
@@ -48,6 +48,10 @@ input:focus,
 textarea:focus,
 select:focus {
   @apply ring-2 border-transparent;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(27%) sepia(87%) saturate(919%) hue-rotate(338deg) brightness(86%) contrast(88%);
 }
 
 /* Estilos para botões */

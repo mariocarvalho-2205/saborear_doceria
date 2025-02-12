@@ -5,13 +5,14 @@ import { motion,AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const testimonials = [
-  { id: 1, image: "/gallery/testimonial-1.jpg", name: "Lindiara", text: "Esse bolo foi surreal!" },
-  { id: 2, image: "/gallery/testimonial-2.jpg", name: "Erica", text: "Que bolo maravilhoso! Todos elogiaram." },
-  { id: 3, image: "/gallery/testimonial-3.jpg", name: "Preta", text: "A saborear é caprichosa, detalhista, perfeccionista, pontual e humana!" },
-  { id: 4, image: "/gallery/testimonial-4.jpg", name: "Patricia Reis", text: "Eu sou apaixonada por recheio de maracuja. É serio, Amei!" },
-  { id: 5, image: "/gallery/testimonial-5.jpg", name: "Amanda", text: "Ahhhh que amor. Ficou lindo!" },
-  { id: 6, image: "/gallery/testimonial-6.jpg", name: "Dai Amaral", text: "Tava lindo, gostoso, voce arrasou, serão sempre esses!" },
-  { id: 7, image: "/gallery/testimonial-7.jpg", name: "Nice", text: "Foi tudo lindo, recheio uma delícia, o bolo maravilhoso!" },
+  { id: 1, image: "/gallery/testimonial-1.jpg", crop_image: "/gallery/crop-testimonial-1.jpg", name: "Lindiara S.", text: "Esse bolo foi surreal!" },
+  { id: 2, image: "/gallery/testimonial-2.jpg", crop_image: "/gallery/crop-testimonial-2.jpg", name: "Erica S.", text: "Que bolo maravilhoso! Todos elogiaram." },
+  { id: 3, image: "/gallery/testimonial-3.jpg", crop_image: "/gallery/crop-testimonial-3.jpg", name: "Barbara C.", text: "A saborear é caprichosa, detalhista, perfeccionista, pontual e humana!" },
+  { id: 4, image: "/gallery/testimonial-4.jpg", crop_image: "/gallery/crop-testimonial-4.jpg", name: "Patricia R.", text: "Eu sou apaixonada por recheio de maracuja. É serio, Amei!" },
+  { id: 5, image: "/gallery/testimonial-5.jpg", crop_image: "/gallery/crop-testimonial-5.jpg", name: "Amanda G.", text: "Ahhhh que amor. Ficou lindo!" },
+  { id: 6, image: "/gallery/testimonial-6.jpg", crop_image: "/gallery/crop-testimonial-6.jpg", name: "Daiane A.", text: "Tava lindo, gostoso, voce arrasou, serão sempre esses!" },
+  { id: 7, image: "/gallery/testimonial-7.jpg", crop_image: "/gallery/crop-testimonial-7.jpg", name: "Aldenice M.", text: "Foi tudo lindo, recheio uma delícia, o bolo maravilhoso!" },
+  { id: 8, image: "/gallery/testimonial-8.jpg", crop_image: "/gallery/crop-testimonial-8.jpg", name: "Paula S.", text: "Estou emocionada!" },
 ];
 
 export default function Testimonials() {
@@ -36,7 +37,7 @@ export default function Testimonials() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            {testimonials.map(({ id, image, name, text }) => (
+            {testimonials.map(({ id, image, crop_image, name, text }) => (
               <motion.div
                 key={id}
                 className="group relative bg-[#FADBD8] shadow-lg rounded-2xl p-4 transition-all duration-300 hover:scale-105"
@@ -46,7 +47,7 @@ export default function Testimonials() {
               >
                 <div className="relative overflow-hidden rounded-xl shadow-md cursor-pointer">
                   <Image 
-                    src={image} 
+                    src={crop_image} 
                     alt={name} 
                     width={300} 
                     height={300} 
