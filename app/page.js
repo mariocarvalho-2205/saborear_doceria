@@ -6,6 +6,7 @@ import About from '@/app/components/sections/About'
 import Gallery from '@/app/components/sections/Gallery'
 import MyCarousel from '@/app/components/sections/Carousel'
 import Videos from '@/app/components/sections/Videos'
+import Testimonials from "@/app/components/sections/Testimonials";
 import Contact from '@/app/components/sections/Contact'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Gallery />
       <MyCarousel />
       <Videos />
+      <Testimonials />
       <About />
       <Contact />
       <Footer />

@@ -47,6 +47,12 @@ export default function Navbar() {
 						Videos
 					</a>
 					<a
+						href="#testimonials"
+						className=" hover:text-[#E6B0AA] transition-colors"
+					>
+						Depoimentos
+					</a>
+					<a
 						href="#sobre"
 						className=" hover:text-[#E6B0AA] transition-colors"
 					>
@@ -85,12 +91,6 @@ export default function Navbar() {
 				<div className="md:hidden bg-[#FADBD8]">
 					<div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
 						<a
-							href="#sobre"
-							className="text-[#802424] hover:text-[#E6B0AA]"
-						>
-							Sobre
-						</a>
-						<a
 							href="#galeria"
 							className="text-[#802424] hover:text-[#E6B0AA]"
 						>
@@ -101,6 +101,24 @@ export default function Navbar() {
 							className="text-[#802424] hover:text-[#E6B0AA]"
 						>
 							Eventos
+						</a>
+						<a
+							href="#videos"
+							className=" hover:text-[#E6B0AA] transition-colors"
+						>
+							Videos
+						</a>
+						<a
+							href="#testimonials"
+							className=" hover:text-[#E6B0AA] transition-colors"
+						>
+							Depoimentos
+						</a>
+						<a
+							href="#sobre"
+							className="text-[#802424] hover:text-[#E6B0AA]"
+						>
+							Sobre
 						</a>
 						<a
 							href="#contato"
