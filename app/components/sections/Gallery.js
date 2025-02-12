@@ -8,10 +8,10 @@ export default function Gallery() {
      initial={{ opacity: 0, y: 50 }}
      whileInView={{ opacity: 1, y: 0 }}
      transition={{ duration: 0.8 }}
-     className="py-28 bg-gradient-to-r from-[#f9edec] to-[#fbf8f7] scroll-mt-2 px-6"
+     className="py-28 bg-gradient-to-r from-[#893535] to-[#a55454] scroll-mt-2 px-6"
    >
      <div className="container mx-auto px-4">
-       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-saturnus">
+       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-saturnus text-[#FADBD8]">
          Nossos Momentos Especiais
        </h2>
        <div className="max-w-6xl mx-auto">

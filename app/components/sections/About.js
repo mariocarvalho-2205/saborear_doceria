@@ -8,9 +8,9 @@ export default function About() {
      initial={{ opacity: 0, y: 50 }}
      whileInView={{ opacity: 1, y: 0 }}
      transition={{ duration: 0.8 }}
-     className="py-28 bg-white scroll-mt-2 px-6"
+     className="py-28  scroll-mt-2 px-6 bg-gradient-to-r from-[#893535] to-[#a55454]"
    >
-     <div className="container mx-auto px-4 max-w-6xl">
+     <div className="container mx-auto px-4 max-w-6xl text-[#FADBD8]">
        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-saturnus">
          A doce arte de saborear a vida
        </h2>

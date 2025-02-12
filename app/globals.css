@@ -5,6 +5,8 @@
 /* Configurações globais */
 html {
   scroll-behavior: smooth;
+  background: rgb(137, 53, 53);
+  background: linear-gradient(90deg, rgba(137, 53, 53, 1) 0%, rgba(165, 84, 84, 1) 100%);
 }
 
 body {
@@ -36,12 +38,16 @@ body {
 }
 
 /* Estilos para formulários */
-input, textarea, select {
+input,
+textarea,
+select {
   @apply outline-none transition-all duration-200;
 }
 
-input:focus, textarea:focus, select:focus {
-  @apply ring-2  border-transparent;
+input:focus,
+textarea:focus,
+select:focus {
+  @apply ring-2 border-transparent;
 }
 
 /* Estilos para botões */
@@ -67,11 +73,16 @@ input:focus, textarea:focus, select:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-[#FADBD8] rounded-full hover:bg-[#E6B0AA];
+  @apply bg-[#e3d8fa] rounded-full hover:bg-[#E6B0AA];
 }
 
 /* Estilos para textos */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply font-bold;
 }
 

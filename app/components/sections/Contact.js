@@ -46,17 +46,17 @@ export default function Contact() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="py-28 bg-white scroll-mt-2 px-6"
+      className="py-28 scroll-mt-2 px-6 bg-gradient-to-r from-[#893535] to-[#a55454]"
     >
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-saturnus">
+      <div className="container mx-auto px-4 ">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-saturnus text-[#FADBD8]">
           Faça seu Orçamento
         </h2>
         <form onSubmit={handleSubmit(onSubmit)} className="max-w-2xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
             {/* Nome */}
             <div>
-              <label className="block mb-2">Nome</label>
+              <label className="block mb-2 text-[#FADBD8]">Nome</label>
               <input
                 type="text"
                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424]"
@@ -67,7 +67,7 @@ export default function Contact() {
 
             {/* Email */}
             <div>
-              <label className="block mb-2">Email</label>
+              <label className="block mb-2 text-[#FADBD8]">Email</label>
               <input
                 type="email"
                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424]"
@@ -78,7 +78,7 @@ export default function Contact() {
 
             {/* Telefone */}
             <div>
-              <label className="block mb-2">Telefone</label>
+              <label className="block mb-2 text-[#FADBD8]">Telefone</label>
               <input
                 type="tel"
                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424]"
@@ -89,7 +89,7 @@ export default function Contact() {
 
             {/* Tipo de Evento */}
             <div>
-              <label className="block mb-2">Tipo de Evento</label>
+              <label className="block mb-2 text-[#FADBD8]">Tipo de Evento</label>
               <select
                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424]"
                 {...register("eventType")}
@@ -105,7 +105,7 @@ export default function Contact() {
 
             {/* Mensagem */}
             <div className="md:col-span-2">
-              <label className="block mb-2">Mensagem</label>
+              <label className="block mb-2 text-[#FADBD8]">Mensagem</label>
               <textarea
                 rows="4"
                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424]"
@@ -118,7 +118,7 @@ export default function Contact() {
           {/* Botão de Enviar */}
           <button
             type="submit"
-            className="mt-6 w-full bg-[#802424] text-white py-3 rounded-lg hover:bg-[#E6B0AA] transition-colors btn"
+            className="mt-6 w-full bg-[#FADBD8] text-[#802424] py-3 rounded-lg hover:bg-[#E6B0AA] transition-colors btn"
             disabled={isSubmitting}
           >
             {isSubmitting ? "Enviando..." : "Enviar Pedido"}

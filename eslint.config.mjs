@@ -7,27 +7,20 @@ const __dirname = dirname(__filename);
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
-  recommendedConfig: {
-    env: {
-      es2022: true,
-      node: true,
-    },
-  },
 });
 
 const eslintConfig = [
   {
+    files: ["**/*.{js,jsx,ts,tsx}"],
     ignores: [".next/*", "node_modules/*"],
   },
   ...compat.extends("next/core-web-vitals"),
   {
     languageOptions: {
-      parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
-      },
-    },
-  },
+      ecmaVersion: "latest",
+      sourceType: "module",
+    }
+  }
 ];
 
 export default eslintConfig;

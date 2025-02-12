@@ -11,10 +11,10 @@ export default function MyCarousel() {
 			initial={{ opacity: 0, y: 50 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.8 }}
-			className="py-28 bg-white scroll-mt-4 px-6"
+			className="py-28 scroll-mt-4 px-6 bg-gradient-to-r from-[#893535] to-[#a55454]"
 		>
 			<div className="container mx-auto px-4">
-				<h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-saturnus">
+				<h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-saturnus text-[#FADBD8]">
 					Nossos Eventos
 				</h2>
 				<Carousel

@@ -29,12 +29,6 @@ export default function Navbar() {
 				</div>
 				<div className="hidden md:flex space-x-6">
 					<a
-						href="#sobre"
-						className=" hover:text-[#E6B0AA] transition-colors"
-					>
-						Sobre
-					</a>
-					<a
 						href="#galeria"
 						className=" hover:text-[#E6B0AA] transition-colors"
 					>
@@ -51,6 +45,12 @@ export default function Navbar() {
 						className=" hover:text-[#E6B0AA] transition-colors"
 					>
 						Videos
+					</a>
+					<a
+						href="#sobre"
+						className=" hover:text-[#E6B0AA] transition-colors"
+					>
+						Sobre
 					</a>
 					<a
 						href="#contato"
