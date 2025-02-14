@@ -31,9 +31,11 @@ export default function MyCarousel() {
 							<Image
 								src={`/gallery/carousel-${index}.jpg`}
 								alt={`Evento Carrossel ${index}`}
-								width={1680}
-								height={1050}
+								width={800}
+								height={600}
 								className="rounded-lg"
+								priority={true} // Para imagens above the fold
+								quality={75} // Ajuste conforme necessidade
 							/>
 						</div>
 					))}

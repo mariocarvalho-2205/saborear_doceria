@@ -78,10 +78,11 @@ export default function Contact() {
 					<div className="grid md:grid-cols-2 gap-6">
 						{/* Nome */}
 						<div>
-							<label className="block mb-2 text-[#FADBD8]">
+							<label htmlFor="name" className="block mb-2 text-[#FADBD8]">
 								Nome
 							</label>
 							<input
+								id="name"
 								type="text"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("name")}
@@ -95,10 +96,11 @@ export default function Contact() {
 
 						{/* Email */}
 						<div>
-							<label className="block mb-2 text-[#FADBD8]">
+							<label htmlFor="email" className="block mb-2 text-[#FADBD8]">
 								Email
 							</label>
 							<input
+								id="email"
 								type="email"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("email")}
@@ -112,10 +114,11 @@ export default function Contact() {
 
 						{/* Telefone */}
 						<div>
-							<label className="block mb-2 text-[#FADBD8]">
+							<label htmlFor="phone" className="block mb-2 text-[#FADBD8]">
 								Telefone
 							</label>
 							<input
+								id="phone"
 								type="tel"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("phone")}
@@ -129,10 +132,11 @@ export default function Contact() {
 
 						{/* Tipo de Evento */}
 						<div>
-							<label className="block mb-2 text-[#FADBD8]">
+							<label htmlFor="enventType" className="block mb-2 text-[#FADBD8]">
 								Tipo de Evento
 							</label>
 							<select
+								id="eventType"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("eventType")}
 							>
@@ -151,10 +155,11 @@ export default function Contact() {
 
 						{/* Qtd de Convidados */}
 						<div>
-							<label className="block mb-2 text-[#FADBD8]">
+							<label htmlFor="qtd_convidados" className="block mb-2 text-[#FADBD8]">
 								Quantidade de convidados
 							</label>
 							<input
+								id="qtd_convidados"
 								type="text"
 								className="w-full px-4 py-2 border bg-[#FADBD8] rounded-lg focus:ring-2 focus:ring-[#802424] "
 								{...register("qtd_convidados")}
@@ -168,10 +173,11 @@ export default function Contact() {
 
 						{/* Data do Evento */}
 						<div>
-							<label className="block mb-2 text-[#FADBD8]">
+							<label htmlFor="dt_event" className="block mb-2 text-[#FADBD8]">
 								Data do Evento
 							</label>
 							<input
+								id="dt_event"
 								type="date"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("dt_event")}
@@ -185,10 +191,11 @@ export default function Contact() {
 
 						{/* Mensagem */}
 						<div className="md:col-span-2">
-							<label className="block mb-2 text-[#FADBD8]">
+							<label htmlFor="message" className="block mb-2 text-[#FADBD8]">
 								Mensagem
 							</label>
 							<textarea
+								id="message"
 								rows="4"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("message")}
