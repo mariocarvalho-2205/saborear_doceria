@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
 					href="https://fonts.cdnfonts.com/css/saturnus"
 					rel="stylesheet"
 				/>
+				<meta name="robots" content="index,follow" />
 			</head>
 			<body>{children}</body>
 		</html>
