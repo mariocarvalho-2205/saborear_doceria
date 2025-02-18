@@ -1,5 +1,6 @@
 // app/layout.js
 import "./globals.css";
+import Script from 'next/script';
 
 export const metadata = {
 	title: "Saborear Doceria - Bolos Artesanais para Momentos Especiais",
@@ -74,6 +75,10 @@ export default function RootLayout({ children }) {
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(metadata.structuredData) }}
+				/>
+				<Script
+					src="https://www.googletagmanager.com/gtag/js?id=SEU_ID"
+					strategy="lazyOnload"
 				/>
 			</head>
 			<body>{children}</body>

@@ -83,6 +83,7 @@ export default function Contact() {
 							</label>
 							<input
 								id="name"
+								name="name"
 								type="text"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("name")}
@@ -101,6 +102,7 @@ export default function Contact() {
 							</label>
 							<input
 								id="email"
+								name="email"
 								type="email"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("email")}
@@ -119,6 +121,7 @@ export default function Contact() {
 							</label>
 							<input
 								id="phone"
+								name="phone"
 								type="tel"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("phone")}
@@ -137,6 +140,7 @@ export default function Contact() {
 							</label>
 							<select
 								id="eventType"
+								name="eventType"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("eventType")}
 							>
@@ -160,6 +164,7 @@ export default function Contact() {
 							</label>
 							<input
 								id="qtd_convidados"
+								name="qtd_convidados"
 								type="text"
 								className="w-full px-4 py-2 border bg-[#FADBD8] rounded-lg focus:ring-2 focus:ring-[#802424] "
 								{...register("qtd_convidados")}
@@ -178,6 +183,7 @@ export default function Contact() {
 							</label>
 							<input
 								id="dt_event"
+								name="dt_events"
 								type="date"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("dt_event")}
@@ -196,6 +202,7 @@ export default function Contact() {
 							</label>
 							<textarea
 								id="message"
+								name="message"
 								rows="4"
 								className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#802424] bg-[#FADBD8]"
 								{...register("message")}

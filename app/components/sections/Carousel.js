@@ -34,7 +34,7 @@ export default function MyCarousel() {
 								width={800}
 								height={600}
 								className="rounded-lg"
-								priority={true} // Para imagens above the fold
+								priority
 								quality={75} // Ajuste conforme necessidade
 							/>
 						</div>
